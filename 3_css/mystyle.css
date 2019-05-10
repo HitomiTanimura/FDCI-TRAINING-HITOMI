@@ -1,0 +1,104 @@
+#top {
+	background-color: #3cb371;
+	padding: 3px 25px;
+	color: #FFF;
+	text-align: left;
+}
+
+/*----------menubar-----------*/
+
+#menubar {
+	display: block;
+	float: left;
+	margin-right: 50px;
+}
+
+/*------------list-------------*/
+
+#menubar > #menulist > .menuitem {
+	list-style: none;
+	display: block;
+	background-color: #d3d3d3;
+	width: 200px;
+	margin: 3px;
+	text-align: left;
+	border: 2px solid gray;
+	border-radius: 8px;
+	padding: 2px;
+	}
+
+#menubar > #menulist > .menuitem.selected {
+	background-color:  #3cb371;
+}
+
+
+/*-------------ul----------------*/
+
+#menubar > #menulist {
+		padding-left: 0px;
+		margin-top: 30px;
+	}
+
+
+/*------------main----------------*/
+
+#greenbutton {
+		width: 100px;
+		background-color: #32cd32;
+		text-decoration: none;
+		color: #FFF;
+		padding: 5px;
+		font-size: 15px;
+
+		}
+
+#orangebutton {
+		width: 100px;
+		background-color: #ffd700;
+		text-decoration: none;
+		color: #FFF;
+		padding: 5px;
+		font-size: 15px;
+		}
+
+#bluebutton {
+		width: 100px;
+		background-color: #87ceeb;
+		text-decoration: none;
+		color: #FFF;
+		padding: 5px;
+		font-size: 15px;
+
+		}
+
+#redbutton {
+		width: 100px;
+		background-color: #e9967a;
+		text-decoration: none;
+		color: #FFF;
+		padding: 5px;
+		font-size: 15px;
+
+		}
+
+#main {
+		display: block;
+		width: 1500px;
+		margin-left: 50px;
+	}
+
+#main > h1 {
+		font-size: 28px;
+}
+
+/*--------footer--------*/
+
+#bottom {
+		background-color: #ECEAE9;
+		display: block;
+		text-align: center;
+		height: 50px;
+		border: 1px solid #CFCECE;
+		clear: both;
+		padding-top: 25px;
+}
