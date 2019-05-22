@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>javascript</title>
+
+
+
+</head>
+
+<body>
+<script>
+
+  function calculate(operation) {  //関数　関数のパラメータ　変数
+  	var firstNumber = document.getElementById('firstNumber').value;　//変数 代入
+  	console.log(firstNumber);　//コンソールログ
+      var result;
+      var secondNumber = document.getElementById('secondNumber').value; 
+     console.log(secondNumber);		
+    		
+    	switch(operation){　//条件分岐
+    		case 'product':
+    			result = Number(firstNumber) * Number(secondNumber)
+    			break;
+    		case 'quotient':
+    			result = Number(firstNumber) / Number(secondNumber)
+    			break;
+    		case 'sum':
+    			result = Number(firstNumber) + Number(secondNumber)
+    			break;
+    		case 'difference':
+    			result = Number(firstNumber) - Number(secondNumber)
+    			break;
+    	}
+    document.getElementById('result').innerHTML = result;
+    }
+
+</script>
+
+<font face="serif">
+<p>1 st Number: <input type="text" id="firstNumber" name="name"  maxlength="20"></p>
+<p>2 st Number: <input type="text" id="secondNumber" name="name"  maxlength="20"></p>
+<font>
+<input type="button" value="Multply" onClick="calculate('product')">
+<input type="button" Value="Divide" onClick="calculate('quotient')">
+<input type="button" Value="Add" onClick="calculate('sum')">
+<input type="button" Value="Subtract" onClick="calculate('difference')">
+
+<p id="result"></p>
+
+
+
+</body>
+</html>
