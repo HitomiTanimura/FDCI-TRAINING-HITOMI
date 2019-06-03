@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>javascript</title>
+
+<script type="text/javascript">
+
+        var employees = ["noreto", "bon2", "julie", "lemuel"];
+        var hours = [20, 5, 12, 15];
+        var earnings = [5, 6, 7, 8];
+
+        // this function will be used to get how many hours the employee worked for
+        function get_num_hours(employee_index){
+            return hours[employee_index];
+        }
+
+        // this function will be used to get the earnings per hour
+        function get_earnings(employee_index){
+            return earnings[employee_index];
+        }
+
+        // this function will be used to compute salary
+        function compute_salary(hours, earnings_per_hour) {
+             return hours * earnings_per_hour;
+
+        }
+
+        // #1. COMPLETE SALARY FUNCTION
+        // #2. LOOP FROM 0 TO 100, CHECK IF EVEN OR ODD
+
+        var noreto_id = 0;
+        var noreto_hours = get_num_hours(noreto_id);
+        var noreto_earnings = get_earnings(noreto_id);
+        var noreto_salary = compute_salary(noreto_hours,noreto_earnings);
+
+        console.log(noreto_salary);
+
+        var bon2_id = 1;
+        var bon2_hours = get_num_hours(bon2_id);
+        var bon2_earnings = get_earnings(bon2_id);
+        var bon2_salary = compute_salary(bon2_hours,bon2_earnings);
+
+        console.log(bon2_salary);
+
+        var julie_id = 2;
+        var julie_hours = get_num_hours(julie_id);
+        var julie_earnings = get_earnings(julie_id);
+        var julie_salary = compute_salary(julie_hours,julie_earnings);
+
+        console.log(julie_salary);
+
+        var lemuel_id = 3;
+        var lemuel_hours = get_num_hours(lemuel_id);
+        var lemuel_earnings = get_earnings(lemuel_id);
+        var lemuel_salary = compute_salary(lemuel_hours,lemuel_earnings);
+
+        console.log(lemuel_salary);
+
+        ///////////////Finally I got it. thank you!
+
+　　 for (i=0; i<101; i++){
+
+        console.log(i);
+
+
+        if (i%2==0) {
+          console.log("odd");}
+
+
+        else {
+          console.log("even");
+
+
+                }
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</head>
+
+<body>
+
+</body>
+
+
+</html>
