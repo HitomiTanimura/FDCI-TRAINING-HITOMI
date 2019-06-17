@@ -33,10 +33,12 @@
 
 	<!-- jquery -->
 	<script type="text/javascript">
-		$('.btn').click(function() {
-		  var color = $( this ).css( "background-color" );
-		  $( ".result" ).html( "Your background color is " + color + "." );
+		$(document).ready(function(){
+			$('.btn').click(function() {
+		  	var color = $( this ).css( "background-color" );
+		 	$( ".result" ).html( "Your background color is " + color + "." );
 		});
+	});
    
 	</script>
   </body>
