@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQUERY - ACTIVITY6</title>
+</head>
+  	<body>
+  	<div>
+	   <p id="tomato" style="color: red;">TOMATO</p>
+	   <p id="lemon" style="color: yellow;">LEMON</p>
+	   <p id="apple" style="color: pink;">APPLE</p>
+
+	   <button>CLICK HERE!</button>
+	   <p class="result"></p>
+
+	</div>
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	</body>
+
+	<!-- jquery -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('button').click(function(event){
+			  	var n = $('p, button, div').length;
+	    		$('.result').html( "There are " + n + " elements.");
+			});
+   		});
+	</script>
+</html>

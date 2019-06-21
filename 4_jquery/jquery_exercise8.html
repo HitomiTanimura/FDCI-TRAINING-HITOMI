@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQUERY - ACTIVITY6</title>
+</head>
+  	<body>
+	  
+	<button>insert a div tag!</button>
+	<div id="parent_fdc_div">fdfd</div>
+
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	</body>
+
+	<!-- jquery -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('button').click(function(){
+				$('#parent_fdc_div').append('<p>ANOTHER LIST</p>');
+			});
+   		});
+	</script>
+</html>
