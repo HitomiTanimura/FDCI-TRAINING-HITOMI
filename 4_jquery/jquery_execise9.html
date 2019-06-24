@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQUERY - ACTIVITY9</title>
+</head>
+  	<body>
+	<ul>
+        <li class="fdc-1"></li>
+        <li class="fdc-2"></li>
+        <li class="fdc-3"></li>
+        <li class="fdc-4"></li>
+	</ul>	
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	</body>
+
+	<!-- jquery -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$(".fdc-4").parent("ul").css( "background-color", "red" );
+
+   		});
+	</script>
+</html>
