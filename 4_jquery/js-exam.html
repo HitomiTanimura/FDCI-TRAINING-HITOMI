@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+    <title>javascript test</title>
+  </head>
+<body>
+
+</body>
+
+  <script type="text/javascript">
+
+  var array = ["pig","latin", "tomato", "pizza", "app", "egg","usagi","object"];
+
+
+  for (var i = 0; i < array.length; i++) {
+  // console.log(array[i]);
+    var arr = array[i];　　//最初のindex
+    // console.log(arr);
+    arr.charAt(0);  //最初の文字出力
+    // console.log(arr.charAt(0));
+    var firstLetter = arr.charAt(0);　//最初の文字だけ
+    // console.log(firstLetter)
+    // console.log(firstLetter);
+    if (firstLetter == "a" ||
+        firstLetter == "e" ||
+        firstLetter == "i" ||
+        firstLetter == "o" ||
+        firstLetter == "u"){
+      result = arr + "ay";
+    } else {
+      arr.substring(1); //最初の文字以外の文字
+      // console.log(arr.substring(1));
+      arr.charAt(0) + arr.substring(1);　//一緒にする
+      // console.log(arr.substring(1) + arr.charAt(0));
+      arr.charAt(0) + arr.substring(1) + "ay";　//ayを追加
+      result　= arr.substring(1) + arr.charAt(0) + "ay";
+    }
+    console.log(result);
+  }
+
+    // function fibo(num) {
+    //   var arrayNum = [];
+    //   for (var i = 0; i < num; i++) {
+    //     if (i < 2){
+    //       arrayNum.push(i);
+    //     } else {
+    //       var past_1 = arrayNum[i - 1];
+    //       var past_2  = arrayNum[i - 2];
+    //
+    //       console.log("current -> " +  i);
+    //       console.log(arrayNum);
+    //       console.log("past one data index -> " + (i - 1) + " value -> " + arrayNum[i - 1]);
+    //       console.log("past two data index -> " + (i - 2) + " value -> " + arrayNum[i - 2]);
+    //       console.log("----------------");
+    //
+    //       arrayNum.push(past_1 + past_2);
+    //     }
+    //   }
+    // //console.log(arrayNum);
+    // }
+
+    function fibo2(num2) {
+      var arrayNum2 = [];
+      for (var i = 0; i < num2; i++) {
+        if (i == 0 || i == 1){
+          arrayNum2.push(i);
+        } else {
+          var past1 = arrayNum2[i - 1];
+          var past2 = arrayNum2[i - 2];
+          arrayNum2.push(past1 + past2);
+
+      }
+    }
+      console.log(arrayNum2);
+  }
+
+
+</script>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQUERY - ACTIVITY3</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<!-- css -->
+	<style type="text/css">
+	.btn {
+	  display: inline-block;
+	  padding: 0.5em 1em;
+	  text-decoration: none;
+	  background: #668ad8;/*ボタン色*/
+	  color: #FFF;
+	  border-bottom: solid 4px #627295;
+	  border-radius: 3px;
+	}
+
+	.btn:hover {
+		opacity: 0.5;
+	}
+	</style>
+</head>
+  <body class="bgcolor">
+    <a href="#" class="btn">BUTTON</a>
+
+	<script type="text/javascript">
+		$( document ).ready(function(){
+	    	$('.btn').click(function(){
+	    	$('.bgcolor').css('background-color','#4169e1');
+	       });
+    	});
+	</script>
+  </body>
+</html>

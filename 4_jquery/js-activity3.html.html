@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>javascript</title>
+
+<script type="text/javascript">
+
+    var myArray = ["pink", "white", "black","green"];
+
+
+    console.log(myArray);
+    console.log(myArray[0]);
+    console.log(myArray[myArray.length-1]);
+    myArray.pop();
+    console.log(myArray);
+    myArray.push("HITOMI");
+    console.log(myArray);
+
+
+
+// -----------------------------
+
+
+    // sum of 300 and -200
+    console.log(getSum(300, -200));
+
+    // sum of 300 and 700
+    console.log(getSum(300, 700));
+
+
+
+    // score 100
+    assignGrade(100);
+
+    // score85
+    assignGrade(85);
+
+    // score 65
+    assignGrade(65);
+
+    // score 64
+    assignGrade(64);
+
+
+    function getSum(a, b) {
+     var result = a + b;
+     return result;
+    }
+
+
+    function assignGrade(score) {
+     var message = '';
+     if (score == 100) {
+      message = "You got perfect score!";
+     } else if (score > 80 && score < 100) {
+      message = "You are doing great!";
+     } else if (score >= 65 && score < 80) {
+      message = "You need more practice!";
+     } else if (score < 65) {
+      message = "You failed!";
+     } else {
+      message = "Score accepted is from 1 to 100 only.";
+     }
+
+     console.log(message);
+
+    }
+
+    assignGrade(30);
+    assignGrade(100);
+
+
+
+
+
+</script>
+
+</head>
+
+<body>
+
+</body>
+
+
+</html>

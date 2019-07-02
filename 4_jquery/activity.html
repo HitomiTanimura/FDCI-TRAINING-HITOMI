@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>javascript</title>
+
+<script type="text/javascript">
+
+
+var myStack = [];
+myStack.push(1);
+myStack.push(2);
+myStack.push(3);
+myStack.push(1);
+myStack.push(2);
+myStack.push(3);
+myStack.push(1);
+myStack.push(2);
+myStack.push(3);
+myStack.push(1);
+myStack.push(2);
+myStack.push(3);
+myStack.push(1);
+myStack.push(2);
+myStack.push(1000);
+myStack.unshift(101);
+myStack.unshift(102);
+myStack.pop();
+myStack.pop();
+myStack.pop();
+myStack.push(200);
+myStack.shift();
+
+///#1. 2nd to the last element
+///#2. 3rd element
+///#3. middle element of an array
+///#4. splice the 3rd element of an array
+///#5. length of the array
+
+console.log(myStack[myStack.length - 2]);  ///1
+console.log(myStack);
+console.log(2); ///2
+console.log(myStack[myStack.length/2]);///3
+console.log(myStack.splice(2,1));///4
+console.log(myStack);
+console.log(myStack.length);
+
+
+
+
+
+
+</script>
+
+</head>
+
+<body>
+
+</body>
+
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQUERY - ACTIVITY12</title>
+</head>
+  	<body>
+		<input type="text" id="fdc_textbox">
+		<input type="checkbox" id="fdc_checkbox">	
+
+
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	</body>
+
+	<!-- jquery -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+				$("#fdc_textbox").keyup(function(){
+
+			  		var text = $(this).val();
+
+						if( text == ("fdc") ) {
+
+					 	$('#fdc_checkbox').attr('checked', true); 
+
+					   	} else {
+
+						$('#fdc_checkbox').attr('checked', false); 
+
+					}
+				});
+			});
+   		
+	</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQUERY - ACTIVITY5</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+</head>
+
+  <body>
+
+ <div id="fdc_div_element" style="height: 200px; width: 200px;"></div>
+	<button>WHAT'S MY HEIGHT AND WIDTH?</button>
+		<div class="result"></div>
+
+	<!-- jquery -->
+	<script type="text/javascript">
+
+		$(document).ready(function(){
+		  $("button").click(function(){
+		    $('#fdc_div_element').height("result");
+			$('#fdc_div_element').width();
+		  });
+		  	
+
+		});
+   
+	</script>
+  </body>
+</html>

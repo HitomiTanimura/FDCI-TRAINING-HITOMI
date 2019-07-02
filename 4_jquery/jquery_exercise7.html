@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JQUERY - ACTIVITY6</title>
+</head>
+  	<body>
+	  	<div class="fdc_parent_container">
+	        <div></div>
+	        <div></div>
+	        <div></div>
+	        <h1></h1>
+	        <p></p>
+	        <span></span>
+	        <div></div>
+		</div>	
+
+		<button>how many dives do I have?</button>
+		<p class="result"></p>
+
+	   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	</body>
+
+	<!-- jquery -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('button').click(function(event){
+			  	var n = $('div').length;
+	    		$('.result').html( "There are " + n + " divs. ");
+			});
+   		});
+	</script>
+</html>
