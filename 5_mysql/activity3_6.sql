@@ -1,0 +1,4 @@
+DELETE FROM 
+	employees 
+WHERE 
+	emp_no = 99999;
