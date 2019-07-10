@@ -3,7 +3,7 @@ INSERT INTO
 	(emp_no, 
 	　birth_date, 
 	　first_name, 
-	　last_name, s
+	　last_name,
 	　gender, 
 　　　 hire_date)
 
