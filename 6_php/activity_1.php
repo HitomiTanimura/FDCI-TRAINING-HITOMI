@@ -10,7 +10,7 @@ $array = ["hitomi", "iroha", "akari"];
 echo "<br>".$s;
 echo "<br>".$n;
 echo "<br>".$b;
-echo "<br>".$array;
+print_r($array);
 
 ///exercise2
 
@@ -18,7 +18,7 @@ $hello = "hello world!";
 
 echo "<br>".$hello;
 echo "<br>".$hello[0];
-echo "<br>".$hello[$hello.length-1];
+$hello[strlen($hello)-1];
 echo "<br>".ucfirst($hello);
 echo "<br>".$hello."HITOMI";
 
